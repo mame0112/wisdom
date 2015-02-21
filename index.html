@@ -6,8 +6,13 @@
 	<link rel="stylesheet" href="css/bootstrap.min.css">
     <script src="lib/angular.min.js"></script>
     <script src="js/wisdom.js"></script>
+    <script src="js/directives.js"></script>
   </head>
   <body ng-app="WidsomApp">
-  <h1>HTML template.</h1>
+  <div ng-controller="WidsomController">
+	  <div header-directive></div>
+	  <h1>HTML template.</h1>
+	  <div footer-directive></div>
+  </div>
   </body>
 </html>

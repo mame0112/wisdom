@@ -1,25 +1,17 @@
-var app = angular.module('WidsomApp', [])
+var wisdomApp = angular.module('WidsomApp', [])
 .controller('WidsomController', ['$scope', function($scope){
 	console.log("AAAA");
 	$scope.message =  'Test message from controller';
-}]);
+}])
 
-// .directive('myDirectiveA', function(){
-// 	return {
-// 		templateUrl: 'my-directive-a.html'
-// 	};
-// })
+.directive('headerDirective', function(){
+	return {
+		templateUrl: 'header-directive.html'
+	};
+})
 
-// .directive('myDirectiveE', function(){
-// 	return {
-// 		restrict: 'E',
-// 		templateUrl: 'my-directive-e.html'
-// 	};
-// })
-
-// .directive('myDirectiveC', function(){
-// 	return {
-// 		restrict: 'C',
-// 		templateUrl: 'my-directive-c.html'
-// 	};
-// });
+.directive('footerDirective', function(){
+	return {
+		templateUrl: 'footer-directive.html'
+	};
+});
