@@ -10,15 +10,15 @@ var wisdomApp = angular.module('WidsomApp', ['ngRoute'])
 	function($routeProvider) {
 		$routeProvider.
 		when('/', {
-			templateUrl: 'index.html',
-			controller: 'UserDataController'
+			templateUrl: 'view/toppage.html',
+			controller: 'WidsomController'
 		}).
 		when('/view', {
-			templateUrl: 'template/userpage.html',
+			templateUrl: 'view/userpage.html',
 			controller: 'UserDataController'
 		}).
-		when('/template/:userId',{
-			templateUrl: 'template/userpage.html',
+		when('/view/:userId',{
+			templateUrl: 'view/userpage.html',
 			controller: 'UserDataController'
 		}).
 		otherwise({

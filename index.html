@@ -15,20 +15,9 @@
   </head>
   <body ng-app="WidsomApp">
   <div class="container">
-	<div ng-controller="WidsomController"></div>
   	<div class="row">
 		<div header-directive></div>
-			<div class="col-xs-2">
-				<div sidebar-directive></div>
-	        </div>
-			<div class="col-xs-8">
-				<div ng-view></div>
-				<div heroshot-directive></div>
-				<div pickup-directive></div>
-			</div>
-			<div class="col-xs-2">
-				<div infobar-directive></div>
-			</div>
+		<div ng-view></div>
 	</div>
 	<div footer-directive></div>
   </div>
