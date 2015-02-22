@@ -12,6 +12,13 @@ wisdomApp.directive('headerDirective', function(){
 	};
 })
 
+.directive('heroshotDirective', function(){
+	return {
+		restrict: 'A',
+		templateUrl: 'heroshot-directive.html'
+	};
+})
+
 .directive('sidebarDirective', function(){
 	return {
 		restrict: 'A',
