@@ -5,27 +5,30 @@
     <title>AngularJS samples</title>
 	<link rel="stylesheet" href="css/bootstrap.min.css">
     <script src="lib/angular.min.js"></script>
-    <script src="lib/angular-route.min.js"></script>
+<!--    <script src="lib/angular-route.min.js"></script> -->
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.0-beta.13/angular-route.min.js"></script>
     <script src="js/wisdom.js"></script>
     <script src="js/directives.js"></script>
 	<script src="js/constants.js"></script>
 	<script src="js/sidebarcontroller.js"></script>
+	<script src="js/pickupController.js"></script>
   </head>
   <body ng-app="WidsomApp">
   <div class="container">
 	<div ng-controller="WidsomController"></div>
   	<div class="row">
 		<div header-directive></div>
-		<div class="col-xs-2">
-			<div sidebar-directive></div>
-        </div>
-		<div class="col-xs-8">
-			<div heroshot-directive></div>
-			<div pickup-directive></div>
-		</div>
-		<div class="col-xs-2">
-			<div infobar-directive></div>
-		</div>
+			<div class="col-xs-2">
+				<div sidebar-directive></div>
+	        </div>
+			<div class="col-xs-8">
+				<div ng-view></div>
+				<div heroshot-directive></div>
+				<div pickup-directive></div>
+			</div>
+			<div class="col-xs-2">
+				<div infobar-directive></div>
+			</div>
 	</div>
 	<div footer-directive></div>
   </div>
