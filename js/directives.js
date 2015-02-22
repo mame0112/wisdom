@@ -24,5 +24,12 @@ wisdomApp.directive('headerDirective', function(){
 		restrict: 'A',
 		templateUrl: 'infobar-directive.html'
 	};
+})
+
+.directive('pickupDirective', function(){
+	return {
+		restrict: 'A',
+		templateUrl: 'pickup-directive.html'
+	};
 });
 

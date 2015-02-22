@@ -4,15 +4,8 @@ wisdomApp.controller('SidebarController', ['$scope', 'Constants', function($scop
 
  	$scope.Category = Constants.Category;
 
- 	$scope.items = [
- 		{id: 1, name: "test1"},
- 		{id: 2, name: "test2"},
- 		{id: 3, name: "test3"},
- 	];
-
  	$scope.initialize = function() {
 		console.log("initialize");
-	 	console.log("datas: " + $scope.Category);
 		setupItems();
  	};
 
