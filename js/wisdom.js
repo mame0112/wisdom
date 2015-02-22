@@ -1,17 +1,7 @@
 var wisdomApp = angular.module('WidsomApp', [])
-.controller('WidsomController', ['$scope', function($scope){
-	console.log("AAAA");
+.controller('WidsomController', ['$scope', 'Constants', function($scope, Constants){
+ 	console.log("Test");
+ 	console.log(Constants.planetName);
+//	console.log("planet: " + Constants.planetName);
 	$scope.message =  'Test message from controller';
-}])
-
-.directive('headerDirective', function(){
-	return {
-		templateUrl: 'header-directive.html'
-	};
-})
-
-.directive('footerDirective', function(){
-	return {
-		templateUrl: 'footer-directive.html'
-	};
-});
+}]);
