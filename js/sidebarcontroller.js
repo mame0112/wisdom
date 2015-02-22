@@ -2,6 +2,8 @@ wisdomApp.controller('SidebarController', ['$scope', 'Constants', function($scop
  	console.log("SidebarController");
  	console.log(Constants.planetName);
 
+ 	$scope.Category = Constants.Category;
+
  	$scope.items = [
  		{id: 1, name: "test1"},
  		{id: 2, name: "test2"},
@@ -10,6 +12,7 @@ wisdomApp.controller('SidebarController', ['$scope', 'Constants', function($scop
 
  	$scope.initialize = function() {
 		console.log("initialize");
+	 	console.log("datas: " + $scope.Category);
 		setupItems();
  	};
 
