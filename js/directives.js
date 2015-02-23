@@ -38,5 +38,11 @@ wisdomApp.directive('headerDirective', function(){
 		restrict: 'A',
 		templateUrl: 'pickup-directive.html'
 	};
-});
+})
 
+.directive('breadcrumbDirective', function(){
+	return {
+		restrict: 'A',
+		templateUrl: 'breadcrumb-directive.html'
+	};
+});
