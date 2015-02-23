@@ -1,3 +1,3 @@
-wisdomApp.controller('infobarController', ['$scope', function($scope){
+wisdomApp.controller('infobarController', ['$scope', 'log', function($scope, log){
  	log.d("infobarController");
 }]);

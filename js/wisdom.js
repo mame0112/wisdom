@@ -13,6 +13,14 @@ var wisdomApp = angular.module('WidsomApp', ['ngRoute'])
 			templateUrl: 'view/toppage.html',
 			controller: 'WidsomController'
 		}).
+		when('/signin', {
+			templateUrl: 'view/signin.html',
+			controller: 'SigninController'
+		}).
+		when('/signup', {
+			templateUrl: 'view/signup.html',
+			controller: 'SignupController'
+		}).
 		when('/view', {
 			templateUrl: 'view/userpage.html',
 			controller: 'UserDataController'
