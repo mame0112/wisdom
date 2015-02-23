@@ -1,6 +1,6 @@
-wisdomApp.service('modeService', ['$rootScope', 'log', function($rootScope, log){
+wisdomApp.service('modeService', ['$rootScope', 'log', 'Constants', function($rootScope, log, Constants){
 
-	var currentMode = 'test';
+	var currentMode = Constants.STATE.STATE_HOME_NO_LOGIN;
 
     return {
         getCurrentMode : function(){
