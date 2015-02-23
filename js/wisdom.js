@@ -1,7 +1,7 @@
 var wisdomApp = angular.module('WidsomApp', ['ngRoute'])
-.controller('WidsomController', ['$scope', 'Constants', function($scope, Constants){
- 	console.log("WidsomController");
- 	console.log(Constants.planetName);
+.controller('WidsomController', ['$scope', 'Constants', 'log', function($scope, Constants, log){
+ 	log.d("WidsomController");
+ 	log.d(Constants.planetName);
 //	console.log("planet: " + Constants.planetName);
 	$scope.message =  'Test message from controller';
 }])
