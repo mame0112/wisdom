@@ -23,4 +23,7 @@
 		<li class="disabled"><a href="#" aria-label="Previous"><span aria-hidden="true">&raquo;</span></a></li>
 	  </ul>
 	</nav>
+	<div ng-repeat="data in params | startFrom: pagination.page * pagination.perPage | limitTo: pagination.perPage">
+    {{data.id}}
+	</div>
 </div>

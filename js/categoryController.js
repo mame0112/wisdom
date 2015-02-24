@@ -1,5 +1,5 @@
-wisdomApp.controller('categoryController', ['$scope', '$http', 'log', 'modeService', 'Constants', '$routeParams',
- function($scope, $http, log, modeService, Constants, $routeParams){
+wisdomApp.controller('categoryController', ['$scope', '$http', 'log', 'modeService', 'Constants', '$routeParams', 'paginationFactory',
+ function($scope, $http, log, modeService, Constants, $routeParams, paginationFactory){
  	log.d("categoryController");
 
  	var ACTIVE = "active";
@@ -7,6 +7,10 @@ wisdomApp.controller('categoryController', ['$scope', '$http', 'log', 'modeServi
  	var ITEM_IN_PAGE = 10;
 
  	var currentPage = 0;
+
+ 	$scope.pagination = paginationFactory.getNew();
+ 	$scope.pagination = paginationFactory.getNew(10);
+ 	$scope.pagination.numPages = 3;
 
  	$scope.categoryId = $routeParams.categoryId;
  	log.d("categoryid: " + $scope.categoryId);
