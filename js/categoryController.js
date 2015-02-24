@@ -5,14 +5,11 @@ wisdomApp.controller('categoryController', ['$scope', '$http', 'log', 'modeServi
  	$scope.categoryId = $routeParams.categoryId;
  	log.d("categoryid: " + $scope.categoryId);
 
- 	// $scope.onSigninOptionSelect = function (){
- 	// 	log.d("onSigninOptionSelect");
-		// modeService.changeCurrentMode(Constants.STATE.STATE_SIGNIN_PAGE);
- 	// };
-
- 	// $scope.onSignupOptionSelect = function (){
- 	// 	log.d("onSignupOptionSelect");
-		// modeService.changeCurrentMode(Constants.STATE.STATE_SIGNUP_PAGE);
- 	// };
+ 	 $http.get('data/categoryData.json').success(function(data){
+ 		$scope.lists = data;
+ 		$scope.totalNum = $scope.lists.length;
+		modeService.changeCurrentMode();
+		// log.d("lists: " + $scope.lists);
+ 	});
 
 }]);
