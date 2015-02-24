@@ -5,7 +5,7 @@ wisdomApp.constant(
 		"Category": [
 			{id: 0, name: "SPORTS", color:"#FF0000"},
 			{id: 1, name: "MUSICS", color:"#00FF00"},
-			{id: 1, name: "COOKING", color:"#0000FF"},
+			{id: 2, name: "COOKING", color:"#0000FF"},
 		],
 		"STATE": {
 			STATE_HOME_NO_LOGIN: "state_home_no_login",

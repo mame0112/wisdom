@@ -29,6 +29,10 @@ var wisdomApp = angular.module('WidsomApp', ['ngRoute'])
 			templateUrl: 'view/userpage.html',
 			controller: 'UserDataController'
 		}).
+		when('/category/:categoryId',{
+			templateUrl: 'view/category.html',
+			controller: 'categoryController'
+		}).
 		otherwise({
 			redirectTo: '/'
 		});

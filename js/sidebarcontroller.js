@@ -1,20 +1,20 @@
-wisdomApp.controller('SidebarController', ['$scope', 'Constants', function($scope, Constants){
- 	console.log("SidebarController");
- 	console.log(Constants.planetName);
+wisdomApp.controller('SidebarController', ['$scope', 'Constants', 'log', function($scope, Constants, log){
+ 	log.d("SidebarController");
+ 	log.d(Constants.planetName);
 
  	$scope.Category = Constants.Category;
 
  	$scope.initialize = function() {
-		console.log("initialize");
+		log.d("initialize");
 		setupItems();
  	};
 
  	$scope.isVisible = function() {
-		console.log("isVisible");
+		log.d("isVisible");
  	};
 
  	var setupItems = function(){
- 		console.log("setupItems");
+ 		log.d("setupItems");
  	};
 
 }]);
