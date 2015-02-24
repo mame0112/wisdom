@@ -16,6 +16,7 @@ wisdomApp.constant(
 			STATE_USER_DETAIL_PAGE: "state_user_detail_page",
 			STATE_CATEGORY_PAGE: "state_category_page",
 			STATE_WISDOM_PAGE: "state_widsom_page"
-		}
+		},
+		PAGING: "paging",
 	}
 );
