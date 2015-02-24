@@ -6,8 +6,11 @@ wisdomApp.controller('categoryController', ['$scope', '$http', 'log', 'modeServi
  	log.d("categoryid: " + $scope.categoryId);
 
  	 $http.get('data/categoryData.json').success(function(data){
- 		$scope.lists = data;
- 		$scope.totalNum = $scope.lists.length;
+ 	 	$scope.result = data;
+ 	 	$scope.categoryName = $scope.result.categoryName;
+ 	 	$scope.params = $scope.result.params;
+ 		$scope.totalNum = $scope.params.length;
+
 		modeService.changeCurrentMode();
 		// log.d("lists: " + $scope.lists);
  	});
