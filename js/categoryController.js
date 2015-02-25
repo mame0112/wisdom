@@ -22,7 +22,7 @@ wisdomApp.controller('categoryController', ['$scope', '$http', 'log', 'modeServi
  	 	$scope.params = $scope.result.params;
  		$scope.totalNum = $scope.params.length;
 
-		shouldPrevBeShown();
+		// shouldPrevBeShown();
 
 		modeService.changeCurrentMode();
 		// log.d("lists: " + $scope.lists);
@@ -33,18 +33,18 @@ wisdomApp.controller('categoryController', ['$scope', '$http', 'log', 'modeServi
  	 	return ACTIVE;
  	 };
 
- 	 var shouldPrevBeShown = function(){
- 	 	log.d("shouldPrevBeShown: " + $scope.totalNum);
+ 	 // var shouldPrevBeShown = function(){
+ 	 // 	log.d("shouldPrevBeShown: " + $scope.totalNum);
 
- 	 	var pageNum = parseInt($scope.totalNum/ITEM_IN_PAGE);
+ 	 // 	var pageNum = parseInt($scope.totalNum/ITEM_IN_PAGE);
 
- 	 	log.d("pageNum: " + pageNum);
+ 	 // 	log.d("pageNum: " + pageNum);
 
- 	 	if(pageNum >= 1){
- 	 		return true;
- 	 	} else {
- 	 		return false;
- 	 	}
- 	 };
+ 	 // 	if(pageNum >= 1){
+ 	 // 		return true;
+ 	 // 	} else {
+ 	 // 		return false;
+ 	 // 	}
+ 	 // };
 
 }]);
