@@ -27,7 +27,7 @@
 	<ul class="pagination">
     <li><a aria-label="Previous" ng-click="pagination.prevPage()">&laquo;</a></li>
 	<li ng-repeat="data in params | startFrom: pagination.page * pagination.perPage | limitTo: pagination.perPage">
-	<a ng-click="pagination.toPageId({{data.id}})">{{data.id}}</a></li>
+	<a ng-click="pagination.toPageId(data.id)">{{data.id}}</a></li>
 	<li><a aria-label="Previous" ng-click="pagination.nextPage()">&raquo;</a></li>
 	</ul>
 </div>

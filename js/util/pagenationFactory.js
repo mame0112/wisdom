@@ -1,7 +1,7 @@
 (function() {
   "use strict";
 
- wisdomApp.factory('paginationFactory', function() {
+ wisdomApp.factory('paginationFactory', ['log', function(log) {
 
     var pagination = {};
 
@@ -28,6 +28,7 @@
       };
 
       paginator.toPageId = function(id) {
+        log.d("pageid: " + id);
         if (id >= 0 && id <= paginator.numPages - 1) {
           paginator.page = id;
         }
@@ -37,7 +38,7 @@
     };
 
     return pagination;
-  });
+  }]);
 
   wisdomApp.filter('startFrom', function() {
     return function(input, start) {
